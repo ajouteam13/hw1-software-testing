@@ -6,6 +6,7 @@ public class CustomCalculator {
     public int subtract(int valueNum1, int valueNum2){
         return valueNum1 - valueNum2;
     }
+    // ctrl + shift + t
 
     public int multiply(int valueNum1, int valueNum2){
         return valueNum1 * valueNum2;

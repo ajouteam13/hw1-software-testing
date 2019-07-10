@@ -45,6 +45,20 @@ public class ChampionTest {
         assertThat(championList, instanceOf(championList.getClass()));
     }
 
+    //비교 관련 테스트 greaterThan, greaterThanOrEqualTo, lessThan, lessThanEqualTo
+    @Test
+    public void testForRelatedComparison() {
+        double playerWinningRate1 = 0.87;
+        double playerWinningRate2 = 0.55;
+        double playerWinningRate3 = 0.55;
+        double playerWinningRate4 = 0.21;
+
+        assertThat(playerWinningRate1, is(greaterThan(playerWinningRate4)));
+        assertThat(playerWinningRate2, is(greaterThanOrEqualTo(playerWinningRate3)));
+        assertThat(playerWinningRate3, is(lessThanOrEqualTo(playerWinningRate2)));
+        assertThat(playerWinningRate4, is(lessThan(playerWinningRate1)));
+    }
+
     //List<String>을 생성하고 값이 비어 있는지를 테스트 empty()
     @Test
     public void givenCollectionWhenEmptyCorrect() {

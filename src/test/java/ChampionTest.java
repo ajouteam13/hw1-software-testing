@@ -33,6 +33,13 @@ public class ChampionTest {
         championList.add(supportChamp);
     }
 
+    @Test //배열에 해당 아이템 있는지 확인
+    public void itemCheck ()
+    {
+        String[] item = {"롤","이","뭐","야"};
+        assertThat(item,hasItemInArray("야"));
+    }
+
     //List<String>을 생성하고 값이 비어 있는지를 테스트 empty()
     @Test
     public void givenCollectionWhenEmptyCorrect() {

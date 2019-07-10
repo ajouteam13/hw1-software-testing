@@ -40,6 +40,11 @@ public class ChampionTest {
         assertThat(item,hasItemInArray("야"));
     }
 
+    @Test
+    public void shouldHaveChampionOnly(){
+        assertThat(championList, instanceOf(championList.getClass()));
+    }
+
     //List<String>을 생성하고 값이 비어 있는지를 테스트 empty()
     @Test
     public void givenCollectionWhenEmptyCorrect() {

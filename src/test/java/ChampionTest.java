@@ -160,5 +160,12 @@ public class ChampionTest {
 //        assertTrue(champName.equals("다리우스"));
 //        assertThat("다리우스", is(champName));
     }
+    @Test
+    public void IgnringCase(){
+        String champName1 = "GAREN";
+        String champName2 = "garen";
 
+        assertThat(champName1,equalToIgnoringCase(champName2));
+
+    }
 }

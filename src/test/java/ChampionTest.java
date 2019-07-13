@@ -33,6 +33,7 @@ public class ChampionTest {
         championList.add(supportChamp);
     }
 
+    //박수연
     @Test //배열에 해당 아이템 있는지 확인
     public void itemCheck ()
     {
@@ -40,11 +41,13 @@ public class ChampionTest {
         assertThat(item,hasItemInArray("야"));
     }
 
+    //김지원
     @Test
     public void shouldHaveChampionOnly(){
         assertThat(championList, instanceOf(championList.getClass()));
     }
 
+    //임희균
     //비교 관련 테스트 greaterThan, greaterThanOrEqualTo, lessThan, lessThanEqualTo
     @Test
     public void testForRelatedComparison() {
@@ -160,6 +163,8 @@ public class ChampionTest {
 //        assertTrue(champName.equals("다리우스"));
 //        assertThat("다리우스", is(champName));
     }
+
+    //노근탁
     @Test
     public void IgnringCase(){
         String champName1 = "GAREN";
